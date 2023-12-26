@@ -1,0 +1,379 @@
+* {
+  /*it is demo for learning css*/
+
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.banner{ /*It is create for banner*/
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0,0,0,0.70 ),rgba(0,0,0,0.80)),url(../image/D1.JPEG);
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 1);
+}
+.banner form{  /*it is use for set product search bar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*it is navbar elements like logo,and size,etc.*/
+
+.navbar{ /*it is use to set fonts on nevagation bar*/
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 50px;
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+}
+.navbar form{  /*it is use for set cities search bar*/
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo{ /* we can set logo */
+    width: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+/*it is create in navbar This search bar made for search cities, products,shop etc*/
+
+.search-bar{/*it is use to set design li  for search bar*/
+    width: 90vh;
+    max-width: 400px;
+    margin-left:60px;
+    margin-bottom: 7px;
+    background: rgba(75, 71, 71, 0.259);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0px 15px;
+    backdrop-filter: blur(4px) saturate(170%);
+}
+.search-bar input{ /*it is use for decorated search bar*/
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 5px;
+    margin-left: 5px;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+}
+::placeholder{/* it is use to set fonts color in search button*/
+    color: rgb(255, 255, 255);
+}
+.search-bar button img{ /*it is use to set search button image*/
+    width: 15px;
+}
+.search-bar button{ /*it is use to set serach button size,redius,etc.*/
+    border: 0;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    background: rgba(255, 255, 255, 0.425);
+    cursor: pointer;
+}   /*end of cities search bar*/
+
+
+
+/*it is use for create effect of navbar buttons like profile,mycart,about*/
+
+.navbar ul li{ /* we can set space in fonts on nevigation bar*/
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    font-size: 10px;
+}
+.navbar li a{ /*we can adjest(right&left) the fonts on nevigation bar*/
+    text-decoration: none;
+    margin-right: 5px;
+    color: rgba(252, 251, 251, 0.99);
+    text-transform: uppercase;
+}
+.navbar li a::after{ /* we can set bottom animation line in nevigation bar*/
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgba(234, 15, 77, 0.897);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar li a:hover::after{ /* we set the length of animation line on nevigation bar*/
+    width: 100%;
+}
+
+
+/*it is use to set main content on web page (Buy where...)*/
+
+.content{ 
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50px);
+    text-align: center;
+    color: rgba(242, 197, 17, 1);
+}
+.content h1{ /*it is use to set content size*/
+    font-size: 55px;
+    margin-top: -100px;
+
+}
+
+/*this center-box1 is use for upper three buttons */
+
+.center-box{ /*it is use for black background in center part*/
+    width: 100%;
+    height: 17vh;
+    background-color: rgba(223, 217, 217, 1);
+    display: flex;
+}
+.h2{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-width: 10px 10px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 1);
+    display: flex;
+}
+
+.center-box button {
+    /* it is a container of all category boxs like box1...5*/
+    width:80px;
+    height: 80px;
+    margin:70px -50px;
+    padding: 100px 100px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px;
+    /*using this box can do animation,size and design 
+     The all five boxes*/
+    display: flex;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+  }
+  .center-box button:hover{
+    /*this is the animation of box1 to box6 like animation is bottom to up */
+    transform: translateY(-10px); 
+  }
+  
+  .center-box h3{
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    font-size: 20px;
+    border: 10px;
+    text-shadow: 3px 2px 2px rgb(0, 0, 0);
+}
+.center-box h4{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding-top: 40px;
+    position: absolute;
+    font-size: 15px;
+    border: 10px;
+    text-shadow: 3px 2px 2px rgb(0, 0, 0);
+}
+/*it is use for background image upper three buttons & Hover effect*/
+
+.center-box.box2 button{ /* in this box we can set size and space .*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134),rgba(0, 0, 0, 0.596)),url(../image/grocery.jpg); 
+}
+.center-box.box3 button{ /* in this box we can set size and space .*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134),rgba(0, 0, 0, 0.596)),url(../image/dairy.jpg);
+}
+.center-box.box4 button{ /* in this box we can set size and space .*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134),rgba(0, 0, 0, 0.596)),url(../image/petcare.jpg);
+}
+.center-box.box5 button{ /* in this box we can set size and space .*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134),rgba(0, 0, 0, 0.596)),url(../image/babycare.jpg);  
+}
+
+
+
+
+
+
+.banner-ad{
+   width:100%;
+   height: 15vh;
+   background-color: rgba(255, 221, 182, 1);
+}
+
+.banner-content img{
+   width: 40%;
+   background-position: bottom right;
+   position: absolute;
+   margin-left: 52%;
+}
+
+.categories {
+  font-family: 'Garamond';
+  font-size: 67px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.sale {
+  position: relative;
+  display: inline-block;
+}
+.sale:before {
+  content: '';
+  width: 80px;
+  border-bottom: 1px solid #111;
+  position: absolute;
+  bottom: 6px;
+}
+.sale:after {
+  content: 'SALE';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  font-size: 25px;
+  line-height: 15px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #252525;
+  bottom: 0;
+  right: 0;
+}
+.item-title {
+  letter-spacing: 0.02em;
+  font-size: 28px;
+}
+.banner-content .banner-title {
+  font-size: 35px;
+}
+
+
+
+
+
+
+.product{ 
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(223, 217, 217, 1);   
+    display: flex;
+}
+.product-item {
+  position: absolute;
+  padding: 15px;
+  background: white;
+  margin: 40px -40px;
+  border: 1px solid #FBFBFB;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease-out;
+}
+.product-item:hover {
+  box-shadow: 0px 21px 44px rgba(0, 0, 0, 0.27);
+}
+.product-item h3 {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #2A2828;
+}
+.product-item figure {
+  background: #FFF9F9;
+  border-radius: 12px;
+  text-align: center;
+}
+.product-item figure img {
+  max-height: 100px;
+  height:auto;
+}
+.product-item .btn-wishlist {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  transition: all 0.3s ease-out;
+}
+
+.product-item .btn-wishlist:hover {
+  background: rgba(228, 43, 114, 1);
+  color: #4B4B4B;
+}
+.product-item .qty {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02px;
+  text-transform: uppercase;
+  color:#FFFFFF;
+}
+.product-item .rating {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #222222;
+}
+.product-item .rating iconify-icon {
+  color: #FFC74A;
+}
+.product-item .price {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #222222;
+}
+.product-item .product-qty {
+  width: 85px;
+}
+.product-item .btn-link {
+  text-decoration: none;
+}
+.product-item #quantity {
+  height: auto;
+  width: 28px;
+  text-align: center;
+  border: none;
+}
+.product-item .btn-number {
+  width: 26px;
+  height: 26px;
+  line-height: 1;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+  color: #222;
+}
